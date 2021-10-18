@@ -1,10 +1,11 @@
 body {
     margin: 0px;
+    font-family: sans-serif;
 }
 
 .box {
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     min-height: 100vh;
 }
 
@@ -15,8 +16,7 @@ body {
 }
 
 .content {
-    flex: 1;
-    flex-direction: column;
+    flex-flow: column;
 }
 
 .header {
@@ -112,7 +112,7 @@ button {
 }
 
 .header-placeholder {
-    background-color: gray;
+    background-color: hsl(200, 6%, 40%);
     padding: 120px;
     display: flex;
     color: #F9FAF8;
@@ -173,10 +173,86 @@ ul {
     padding: 32px;
 }
 
+.bottom {
+    display: flex;
+    flex-flow: column;
+}
+
+.bottom-upper,
+.bottom-lower {
+    display: flex;
+    flex-flow: column;
+}
+
+.bottom-upper {
+    background-color: #E5E7EB;
+    padding: 72px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.bottom-lower {
+    padding: 72px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.bottom-box {
+    display: flex;
+    background-color: #3882F6;
+    padding: 42px;
+    padding-left: 72px;
+    padding-right: 72px;
+    align-self: center;
+    gap: 140px;
+    border-radius: 8px;
+}
+
+.bottom-box > .lower-button {
+    border: 2px solid #F9FAF8;
+    flex: 1 1 auto;
+    border-radius: 12px;
+}
+
+.bottom-box-text {
+    flex: 2 1 auto;
+    color: #F9FAF8;
+}
+
+.bottom-box-text > div:first-child {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.b-text-upper,
+.b-text-lower {
+    flex: 0 1 0px;
+    max-width: 800px;
+    align-self: center;
+    margin: auto;
+}
+
+.b-text-upper {
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    color: #1F2937;
+    padding: 12px;
+}
+
+.b-text-lower {
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0%;
+    padding: 12px;
+    padding-left: 30%;
+}
+
 .footer {
     background-color: #1F2937;
     color: #F9FAF8;
     height: 32px;
     align-items: center;
     justify-content: center;
+    padding: 32px;
 }
