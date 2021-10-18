@@ -71,7 +71,12 @@ body {
 .header-main-text,
 .header-secondary-text,
 .header-button {
-    flex: 0 1 auto;
+    flex: auto;
+}
+
+.header-button {
+    display: flex;
+    align-items: flex-end;
 }
 
 .header-logo-text {
@@ -84,7 +89,6 @@ body {
     max-width: 530px;
     gap: 15px;
 }
-
 
 .header-main-text {
     font-size: 48px;
@@ -125,6 +129,48 @@ ul {
     list-style: none;
     padding: 0px;
     margin: 0px;
+}
+
+.middle-content {
+    background-color: #F9FAF8;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 32px;
+    gap: 16px;
+    justify-content: center;
+
+}
+
+.middle-info {
+    flex: auto;
+    min-width: 100%;
+    font-weight: bolder;
+    font-size: 36px;
+    text-align: center;
+}
+
+.card > div:first-child {
+    flex: auto;
+    width: 160px;
+    height: 160px;
+    border: 4px solid #3882F6;
+    border-radius: 12px;
+}
+
+.card {
+    flex: 0 1 0px;
+}
+
+.card-text {
+    text-align: center;
+    padding-top: 8px;
+}
+
+.content-card {
+    display: flex;
+    justify-content: space-around;
+    max-width: 900px;
+    padding: 32px;
 }
 
 .footer {
