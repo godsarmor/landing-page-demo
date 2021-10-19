@@ -1,0 +1,1 @@
+Made for [The Odin Project](https://theodinproject.com)'s curriculum.
