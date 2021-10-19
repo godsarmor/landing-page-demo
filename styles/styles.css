@@ -109,6 +109,7 @@ button {
     font-weight: 700;
     font-size: 16px;
     background-color: #3882F6;
+    cursor: pointer;
 }
 
 .header-placeholder {
@@ -150,7 +151,6 @@ ul {
 }
 
 .card > div:first-child {
-    flex: auto;
     width: 160px;
     height: 160px;
     border: 4px solid #3882F6;
@@ -208,12 +208,6 @@ ul {
     border-radius: 8px;
 }
 
-.bottom-box > .lower-button {
-    border: 2px solid #F9FAF8;
-    flex: 1 1 auto;
-    border-radius: 12px;
-}
-
 .bottom-box-text {
     flex: 2 1 auto;
     color: #F9FAF8;
@@ -246,6 +240,15 @@ ul {
     margin: 0%;
     padding: 12px;
     padding-left: 30%;
+}
+
+#bSign {
+    border: 2px solid #F9FAF8;
+}
+
+.b:hover {
+    background-color: #F9FAF8;
+    color: #3882F6;
 }
 
 .footer {
